@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Blocmarks::Application.config.secret_token = '013e43a739d44c4b3f98f708672d5c315f84d3b3b99e03b0bffee756d7d6240a7cb020d1a9b73c9120c5a84055b2bc11bc5b1cc57bd7ee804c28b4ce6a8170b4'
+Blocmarks::Application.config.secret_token = ENV['SECRET_TOKEN'] || '72fc9208fe1cc148310e6f2daf8458b5d699b5e907822292dbc5a1339d228d9b98dc72c5cc3fe800e9891bcddb6b9773c820fb2807c52595c41f56aa8944cac4'
