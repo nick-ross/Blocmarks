@@ -13,5 +13,6 @@ Blocmarks::Application.routes.draw do
   resources :sessions
 
   root to: 'welcome#index'
+  post :incoming, to: 'incoming#create'
 
 end
